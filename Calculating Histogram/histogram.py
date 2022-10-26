@@ -15,7 +15,7 @@ width,height = photo.shape
 for i in range(0, width):
     for j in range(0,height):
          index = photo[i,j]
-         histogram[index] +=1
+         histogram[index] = histogram[index] + 1
 
 for i,index in enumerate(histogram):
     print(f"{i} -> {index}")
